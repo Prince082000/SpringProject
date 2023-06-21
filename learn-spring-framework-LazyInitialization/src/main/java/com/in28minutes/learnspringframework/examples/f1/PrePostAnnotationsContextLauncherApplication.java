@@ -20,7 +20,7 @@ class SomeClass{
 		this.someDependency=someDependency;
 		System.out.println("All Dependency are Ready!");
 	}
-	
+	//it's get executed after the spring  bean initialized
 	@PostConstruct
 	public void initilaize() {
 		someDependency.getReady();
